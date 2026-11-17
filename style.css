@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.5;
+}
+.about-course {
+    width: 100%;
+    padding: 80px 0;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.title {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1.05;
+    margin-bottom: 45px;
+    color: #000000;
+}
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+.text-block {
+    flex: 1;
+    max-width: 660px;
+}
+
+.text-block p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    color: #000000;
+}
+
+.text-block p:last-child {
+    margin-bottom: 0;
+}
+.image-block {
+    flex-shrink: 0;
+    width: 315px;
+    display: flex;
+    justify-content: center;
+}
+
+.cameraman-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@media (max-width: 991px) {
+    .about-course {
+        padding: 55px 0;
+    }
+
+    .container {
+        max-width: 820px;
+        padding: 0 36px;
+    }
+
+    .title {
+        font-size: 32px;
+        margin-bottom: 26px;
+    }
+
+    .content-wrapper {
+        gap: 45px;
+        align-items: flex-start;
+    }
+
+    .text-block {
+        max-width: 420px;
+    }
+
+    .text-block p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .image-block {
+        width: 190px;
+        margin-top: 5px;
+    }
+}
+@media (max-width: 767px) {
+    .about-course {
+        padding: 40px 0;
+    }
+
+    .container {
+        padding: 0 28px;
+    }
+
+    .title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .text-block {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .text-block p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+    }
+
+    .image-block {
+        width: 175px;
+        margin-top: 0;
+    }
+}
